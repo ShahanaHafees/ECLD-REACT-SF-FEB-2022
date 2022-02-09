@@ -92,7 +92,7 @@ for(i=0; i<matrix1.length; i++)
 let string2 = ["assignment", "problem", "media", "upload"];
 
 console.log('\n');
-for(i=0; i<string.length; i++)
+for(i=0; i<string2.length; i++)
 {
     if(string2[i][0] === 'a' || string2[i][string2[i].length-1] === 'a')
     {
