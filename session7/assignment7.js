@@ -18,17 +18,17 @@ for(let keys in obj)
 //ASSIGNMENT 2
 //Given a string , calculate the occurrence of each and every character and print the output.
 
-let str = "calculate";
+let str = "occurrence";
 var obj = {};
-let count = 1;
+
 for(i=0; i<str.length; i++)
 {
-    if(!obj[str[i]])
+    if(obj[str[i]])
     {
-        obj[str[i]] = count;
+        obj[str[i]] = obj[str[i]] + 1 ;
     }else
     {
-        obj[str[i]] = count + 1;
+        obj[str[i]] = 1;
     }
 }
 
@@ -73,7 +73,8 @@ var obj1 = {};
 let count1 = 1;
 for(i=0; i<array1.length; i++)
 {
-    if(!obj1[array1[i]]){
+    if(!obj1[array1[i]])
+    {
         obj1[array1[i]] = count1;
     }else
     {
@@ -89,13 +90,7 @@ console.log(Object.keys(obj1));
 
 let str1 = 'end';
 let str2 = 'den';
-let L1 = str1.length;
-let L2 = str2.length;
 
-if(L1 != L2)
-{
-    console.log(..."FALSE");
-}
 let a = str1.split('').sort().join('');
 let b = str2.split('').sort().join('');
 
@@ -107,6 +102,13 @@ if(a === b)
 {
     console.log(..."FALSE");
 }
+
+// let str1 = "fun real";
+// let str2 = "funeral";
+
+// let a = str1.split(' ').join('').split('').sort().join('');
+// let b = str2.split(' ').join('').split('').sort().join('');
+// split(' space ') is used to include the space between 
 
 //ASSIGNMENT 6
 //Given an employees database query the employees who are from hyderabad and having experience more than 3 years
@@ -144,7 +146,4 @@ for(i=0; i<database.length; i++)
         console.log(database[i].name);
     }
 }
-
-
-
 
